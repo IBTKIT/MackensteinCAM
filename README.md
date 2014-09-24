@@ -13,7 +13,8 @@ Features:
 - accuracy 1±1 mm
 - system of markers for robust identification using an error-correcting code
 
-Includes all algorithms from the following paper: http://www.degruyter.com/view/j/bmte.ahead-of-print/bmt-2014-0018/bmt-2014-0018.xml?format=INT
+Includes all algorithms from the following paper:
+- DOI: http://dx.doi.org/10.1515/bmt-2014-0018
 - explains all processing steps
 - includes validation
 
