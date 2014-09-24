@@ -26,3 +26,4 @@ Note that this page is still work-in-progress, and the tool will shortly be give
 
 * documentation
 * proper Make-file
+* please get back to walther.schulze@kit.edu for any input /requests/ suggestions.
