@@ -13,8 +13,8 @@ Features:
 - accuracy 1±1 mm
 - system of markers for robust identification using an error-correcting code
 
-Includes all algorithms from the following paper:
-- DOI: http://dx.doi.org/10.1515/bmt-2014-0018
+Includes all algorithms from the paper "Automatic camera-based identification and 3-D reconstruction of electrode positions in electrocardiographic imaging":
+- http://dx.doi.org/10.1515/bmt-2014-0018
 - explains all processing steps
 - includes validation
 
