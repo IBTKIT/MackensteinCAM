@@ -28,3 +28,20 @@ Note that this page is still work-in-progress, and the tool will shortly be give
 * documentation
 * proper Make-file
 * please feel free to get back to walther.schulze@kit.edu for any input /requests/ suggestions.
+
+
+If you are interested in using MackensteinCAM and haven’t yet told us about it, please do so and send us an email: walther.schulze@kit.edu. We are very happy to help you get started.
+
+Are you using MackensteinCAM in research work? If so, please include explicit mention of our work in your publication:
+
+<pre>
+@article{MackensteinCAM2014,
+  title={Automatic camera-based identification and 3-D reconstruction of electrode positions in electrocardiographic imaging},
+  author={Schulze, Walther HW and Mackens, Patrick and Potyagaylo, Danila and Rhode, Kawal and T{\"u}l{\"u}men, Erol and Schimpf, Rainer and Papavassiliu, Theano and Borggrefe, Martin and D{\"o}ssel, Olaf},
+  journal={Biomedical Engineering/Biomedizinische Technik},
+  volume={59},
+  number={6},
+  pages={515--528},
+  year={2014}
+}
+</pre>
