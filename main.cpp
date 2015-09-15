@@ -203,10 +203,6 @@ int main(int argc, char *argv[])
     for(int key = 0; key != 'q';) //'q' exists the program, check for other entered keys in switch loop...
     {
         key = cv::waitKey(); //reading next key
-        //std::vector< std::vector<int> > idlist; //vectors for calculation distances and angles (experimental purposes)
-        //std::vector<int> idpair;
-        //std::vector< std::vector<int> > idlist2;
-        //std::vector<int> idquadruplet;
         switch(key)
         {
           case 'e': // enable/disable drawing of epipolarlines
@@ -228,16 +224,6 @@ int main(int argc, char *argv[])
             cv::imshow("Image0", s->getImageWithPoints(0));
             cv::imshow("Image1", s->getImageWithPoints(1));
             break;
-/*          case '+': //set font and point size
-            s->setSize(1);
-            cv::imshow("Image0", s->getImageWithPoints(0));
-            cv::imshow("Image1", s->getImageWithPoints(1));
-            break;
-          case '-':
-            s->setSize(0);
-            cv::imshow("Image0", s->getImageWithPoints(0));
-            cv::imshow("Image1", s->getImageWithPoints(1));
-            break; */
           case 't': //triangulate points, write pointclouds to matlab files, join pointclouds and write final pointcloud to matlab file
             pair1->triangulateElectrodes();
             pair1->triangulateFundamentalmarkers();
@@ -362,46 +348,6 @@ int main(int argc, char *argv[])
           case '9':
             s->setPointstorage(9);//ARUCO MARKERS
             break;
-/*        case 'd': //distance and angle calculations for experimental purposes
-            for( int i= 0; i <= 110; i+=10)
-            {
-                idpair.push_back(i);
-                idpair.push_back((i+10)%40 + 40* (i/40));
-                idlist.push_back( idpair);
-                idpair.clear();
-            }
-            s->calculateDistances( idlist);
-            break;
-          case 'a':
-            for( int i= 0; i <= 30; i+=10)
-            {
-                idquadruplet.push_back(i);
-                idquadruplet.push_back((i+10)%40);
-                idquadruplet.push_back((i+10)%40);
-                idquadruplet.push_back((i+20)%40);
-                idlist2.push_back( idquadruplet);
-                idquadruplet.clear();
-            }
-            for( int i= 40; i <= 70; i+=10)
-            {
-                idquadruplet.push_back(i);
-                idquadruplet.push_back((i+10)%40+40);
-                idquadruplet.push_back((i+10)%40+40);
-                idquadruplet.push_back((i+20)%40+40);
-                idlist2.push_back( idquadruplet);
-                idquadruplet.clear();
-            }
-            for( int i= 80; i <= 110; i+=10)
-            {
-                idquadruplet.push_back(i);
-                idquadruplet.push_back((i+10)%40+80);
-                idquadruplet.push_back((i+10)%40+80);
-                idquadruplet.push_back((i+20)%40+80);
-                idlist2.push_back( idquadruplet);
-                idquadruplet.clear();
-            }
-            s->calculateAngles(idlist2);
-            break; */
         }
     }
     return 0;
@@ -696,13 +642,13 @@ void join(TwoView *s1, TwoView *s2, TwoView *d) //joining both pointclouds and s
     s2c.z /= same;
     scalefactor /= scalenumber;
 
-    std::cout << "Note that electrode distances should be either 45mm (for 8) or 30mm (for 12 markers), see mackens12." << std::endl;
+    std::cout << "Note that electrode distances should be either 45mm (for 8) or 30mm (for 12 markers) for the default marker system provided with the software." << std::endl;
     std::cout << "-----------" << std::endl;
     std::cout << "Same: " << same << std::endl;
     std::cout << "Scalenumber: " << scalenumber << std::endl;
     std::cout << "Scalefactor: " << scalefactor << std::endl;
 
-    //second: scaling, translating and rotating second pointcloud: see bachelor thesis for details
+    //second: scaling, translating and rotating second pointcloud
 
     cv::Mat H = (cv::Mat_<float>(3,3) << 0, 0, 0,
                                          0,  0, 0,
