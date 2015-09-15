@@ -32,7 +32,7 @@ Note that this page is still work-in-progress, and the tool will shortly be give
 
 If you are interested in using MackensteinCAM and haven’t yet told us about it, please do so and send us an email: walther.schulze@kit.edu. We are very happy to help you get started.
 
-Are you using MackensteinCAM in research work? If so, please include explicit mention of our work in your publication:
+Are you using MackensteinCAM in research work? If so, please include explicit mention of our work in your related publications:
 
 <pre>
 @article{MackensteinCAM2014,
