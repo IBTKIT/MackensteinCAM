@@ -27,10 +27,10 @@ Note that this page is still work-in-progress, and the tool will shortly be give
 
 * documentation
 * proper Make-file
-* please feel free to get back to walther.schulze@kit.edu for any input /requests/ suggestions.
+* please feel free to get back to ws@evolunis.com for any input /requests/ suggestions.
 
 
-If you are interested in using MackensteinCAM and haven’t yet told us about it, please do so and send us an email: walther.schulze@kit.edu. We are very happy to help you get started.
+If you are interested in using MackensteinCAM and haven’t yet told us about it, please do so and send us an email: ws@evolunis.com. We are very happy to help you get started.
 
 Are you using MackensteinCAM in research work? If so, please include explicit mention of our work in your related publications:
 
