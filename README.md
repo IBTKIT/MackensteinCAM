@@ -4,9 +4,10 @@ MackensteinCAM
 
 MackensteinCAM
 
-This tool is distributed under the MIT License (MIT).
-
 A camera-based system for automatic identification and localization of electrodes.
+
+Developed by the Institute of Biomedical Engineering (IBT) of the Karlsruhe Institute of Technology (KIT).
+This tool is distributed under the MIT License (MIT).
 
 Features:
 - localizes multiple electrode positions at once
