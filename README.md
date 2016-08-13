@@ -15,21 +15,12 @@ Features:
 - system of markers for robust identification using an error-correcting code
 
 Includes all algorithms from the following paper:
-http://dx.doi.org/10.1515/bmt-2014-0018
-- explains all processing steps
-- includes validation
+http://dx.doi.org/10.1515/bmt-2014-0018, which explains all processing steps and includes a validation.
 
-It requires
+The code requires
 
 * the open source computer vision (OpenCV) library (version 2.4.6.0), which is distributed under a BSD license
 * the Augmented Reality library from the University of Cordoba (ArUco) (version 1.1.0), which is distributed under a BSD licence
-
-Note that this page is still work-in-progress, and the tool will shortly be given a:
-
-* documentation
-* proper Make-file
-* please feel free to get back to ws@evolunis.com for any input /requests/ suggestions.
-
 
 If you are interested in using MackensteinCAM and haven’t yet told us about it, please do so and send us an email: ws@evolunis.com. We are very happy to help you get started.
 
