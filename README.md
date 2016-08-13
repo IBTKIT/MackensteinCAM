@@ -26,7 +26,8 @@ If you are interested in using MackensteinCAM and haven’t yet told us about it
 
 ### Getting Started
 
-Get yourself two cameras with posts (e.g. two Canon EOS 600D). Add a remote controller to acquire the scence from the two positions at the same time. For static electrode positions, you can also start with a single camera (e.g. that of your iPhone).
+For static electrode positions, start with a single camera (e.g. that of your iPhone) and take two photos of the same scene.
+For dynamic electrode positions, get yourself two cameras with posts (e.g. two Canon EOS 600D). Then add a remote controller to acquire the scence from the two positions at the same time. 
 
 ### Compile and Install
 
