@@ -24,6 +24,31 @@ The code requires
 
 If you are interested in using MackensteinCAM and haven’t yet told us about it, please do so and send us an email: ws@evolunis.com. We are very happy to help you get started.
 
+### Getting Started
+
+For static electrode positions, start with a single camera (e.g. that of your iPhone) and take two photos of the same scene.
+For dynamic electrode positions, get yourself two cameras with posts (e.g. two Canon EOS 600D). Then add a remote controller to acquire the scence from the two positions at the same time. 
+
+### Compile and Install
+
+install OpenCV and then ArUco, make sure that your system variables are properly set. 
+To run the application type:
+
+generate 
+ cmake .
+ make
+ ./MackenteinCAM
+
+note:
+If CMake could not find aruco library, please modify 5th line in CMakeLists.txt
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "/usr/local/lib/cmake") to proper path to Findacuro.cmake file or you can run  cmake like this:
+
+./cmake -D CMAKE_MODULE_PATH="<path-to-folder-containing-Findacuro.cmake-file>" <path-to-sources>
+
+
+### Quick Start
+Please see our wiki page https://github.com/IBTKIT/MackensteinCAM/wiki with instructions on how to run the tool for an example from the paper.
+
 Are you using MackensteinCAM in research work? If so, please include explicit mention of our work in your related publications:
 
 <pre>
