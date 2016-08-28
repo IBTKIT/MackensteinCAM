@@ -31,9 +31,9 @@ For dynamic electrode positions, get yourself two cameras with posts (e.g. two C
 
 ### Compile and Install
 
-#### Install OpenCV
+#### OpenCV
 Install OpenCV, make sure that your system variables are properly set.
-#### Install ArUco
+#### ArUco
 Install ArUco (version 2.0.10):
 * download from https://sourceforge.net/projects/aruco/files/
 * in the downloaded directory, run commands:
@@ -54,7 +54,7 @@ sudo make install
 CMAKE_CXX_FLAGS:STRING=-std=c++11
 </pre>
 
-#### Install MackensteinCAM
+#### MackensteinCAM
 To run the application type:
 
 generate 
