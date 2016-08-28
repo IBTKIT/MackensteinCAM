@@ -44,13 +44,13 @@ mkdir build
 cd build
 cmake ..
 </pre>
-* note: if cmake throws an error saying that "Performing Test OpenMP_FLAG_DETECTED - Failed", your compilation will likely not run on multiple processors in parallel, but it will likely compile anyway.
+note: if cmake throws an error saying that "Performing Test OpenMP_FLAG_DETECTED - Failed", your compilation will likely not run on multiple processors in parallel, but it will likely compile anyway.
 * in the downloaded directory, run commands:
 * <pre>
 make
 sudo make install
 </pre>
-* note: if make produces warnings requesting a "C++11 extension", assign "-std=c++11" to the CMAKE_CXX_FLAGS in CMakeCache.txt, such that:
+note: if make produces warnings requesting a "C++11 extension", assign "-std=c++11" to the CMAKE_CXX_FLAGS in CMakeCache.txt, such that:
 <pre>
 //Flags used by the compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=-std=c++11
