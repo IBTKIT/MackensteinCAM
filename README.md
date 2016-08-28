@@ -57,12 +57,13 @@ CMAKE_CXX_FLAGS:STRING=-std=c++11
 </pre>
 
 #### MackensteinCAM
-To run the application type:
-
-generate 
-<pre>
- cmake .
- make
+Download MackensteinCAM:
+ git clone https://github.com/IBTKIT/MackensteinCAM
+* <pre>
+mkdir build
+cd build
+cmake ..
+make
  ./MackenteinCAM
 </pre>
 
