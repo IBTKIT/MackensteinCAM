@@ -32,7 +32,9 @@ For dynamic electrode positions, get yourself two cameras with posts (e.g. two C
 ### Compile and Install
 
 #### OpenCV
-Install OpenCV, make sure that your system variables are properly set.
+Install OpenCV (version 2.0.10)
+* download from http://opencv.org/downloads.html
+
 #### ArUco
 Install ArUco (version 2.0.10):
 * download from https://sourceforge.net/projects/aruco/files/
