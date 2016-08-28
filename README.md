@@ -20,7 +20,7 @@ http://dx.doi.org/10.1515/bmt-2014-0018, which explains all processing steps and
 The code requires
 
 * the open source computer vision (OpenCV) library (version 2.4.6.0), which is distributed under a BSD license
-* the Augmented Reality library from the University of Cordoba (ArUco) (version 1.1.0), which is distributed under a BSD licence
+* the Augmented Reality library from the University of Cordoba (ArUco) (version 2.0.10), which is distributed under a BSD licence
 
 If you are interested in using MackensteinCAM and haven’t yet told us about it, please do so and send us an email: ws@evolunis.com. We are very happy to help you get started.
 
@@ -40,16 +40,26 @@ mkdir build
 cd build
 cmake ..
 </pre>
-
-
-2.0.10
+* potential bug, fix: if cmake throws an error saying that "Performing Test OpenMP_FLAG_DETECTED - Failed", your compilation will likely not run on multiple processors in parallel, but it will likely compile anyway.
+* in the downloaded directory, run commands:
+* <pre>
+make
+sudo make install
+</pre>
+* potential bug, fix: if make produces warnings requesting a "C++11 extension", add "c++11" to the CMAKE_CXX_FLAGS in CMakeCache.txt, such that:
+<pre>
+//Flags used by the compiler during all build types.
+CMAKE_CXX_FLAGS:STRING=-std=c++11
+</pre>
 
 To run the application type:
 
 generate 
+<pre>
  cmake .
  make
  ./MackenteinCAM
+</pre>
 
 note:
 If CMake could not find aruco library, please modify 5th line in CMakeLists.txt
